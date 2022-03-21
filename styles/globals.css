@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/*
+=======================================
+============ Text =======================
+=======================================
+*/
+
+.text-xs {
+  @apply text-sm font-bold;
+}
+
+.text-base-bold {
+  @apply text-base font-bold;
+}
+
+.text-s {
+  @apply text-base font-bold;
+}
+
+.text-xl-bold {
+  @apply text-xl font-bold;
+}
+
+.text-2xl-bold {
+  @apply text-2xl font-bold;
+}
+
+.text-3xl-bold {
+  @apply text-3xl font-bold;
+}
+
+.text-3xl-extrabold {
+  @apply text-3xl font-extrabold;
+}
+
+/*
+=======================================
+============ Buttons =======================
+=======================================
+*/
+
+.btn {
+  @apply bg-green text-white rounded;
+}
+
+/*
+=======================================
+============ Margins =======================
+=======================================
+*/
+
+.mtb-3 {
+  @apply mt-3 mb-3;
+}
+
+.mtb-5 {
+  @apply mt-5 mb-5;
+}
+
+/*
+=======================================
+============ Paddings =======================
+=======================================
+*/
+
+.ptb-3 {
+  @apply pt-3 pb-3;
+}
+
+.ptb-8 {
+  @apply pt-8 pb-8;
+}
+
+.ptb-4 {
+  @apply pt-4 pb-4;
+}
+
+.plr-4 {
+  @apply pl-4 pr-4;
+}
+
+.plr-8 {
+  @apply pl-8 pr-8;
+}
+
+/*
+=======================================
+============ Heights =======================
+=======================================
+*/
+
+/*
+=======================================
+============ Widths =======================
+=======================================
+*/
+
+.w-2-3 {
+  @apply w-2/3;
+}
+
+/*
+=======================================
+============ Lists =======================
+=======================================
+*/
+
+.ul-flex-center {
+  @apply flex items-center list-none justify-center;
+}
+
+.nav-flex-center {
+  @apply flex justify-between items-center m-auto;
+}
+
+/*
+=======================================
+============ Screens =======================
+=======================================
+*/
+
+.center {
+  @apply m-auto;
+}
+
+/*
+=======================================
+============ Colors =======================
+=======================================
+*/
+
+.white {
+  @apply text-white;
+}
+
+.red {
+  @apply text-red-600;
+}
+
+.gray {
+  @apply text-gray-500;
+}
+
+.text-color-green {
+  @apply text-green;
+}
+
+.text-color-lightGray {
+  @apply text-lightGray;
+}
+
+.input-border {
+  @apply border border-gray-400;
+}
+
+.light-blue {
+  @apply text-lightBlue;
+}
+
+.light-gray {
+  @apply text-lightGray;
+}
+
+/*
+=======================================
+============ Designs ==================
+=======================================
+*/
+.container {
+  @apply p-4 m-4;
+}
+
+.image-stack {
+  @apply relative;
+}
+
+.image-stack--1 {
+  @apply z-0 absolute;
+}
+
+.image-stack--2 {
+  @apply p-4 z-30 max-w-full absolute;
+}
+
+.image-stack--3 {
+  @apply z-10 absolute;
+}
+
+.image-stack--4 {
+  @apply p-2 z-20 absolute;
+}
+
+/*
+=======================================
+============ Form ==================
+=======================================
+*/
+.form-width {
+  @apply w-96;
+}
+.form-title {
+  @apply text-3xl font-extrabold mb-10 text-lightBlue text-center;
+}
+
+.form-label {
+  @apply text-lg text-lightGray font-semibold;
+}
+
+.form-input {
+  @apply text-lightGray bg-gray-100 border border-gray-300 rounded-lg h-12 p-2.5 my-1;
+}
+
+.form-input-focus {
+  @apply focus:ring-2 focus:ring-gray-400 focus:outline-none;
+}
+
+.form-button {
+  @apply bg-gray-100 text-lg font-medium font-bold text-white w-96 rounded-lg h-12 my-2 hover:bg-hoverGreen focus:outline-none;
+}
+
+.rfq-form-label {
+  @apply text-base my-3 font-bold;
+}
+
+.input {
+  @apply text-base border border-gray-300 rounded-md p-2 mb-1;
+}
+
+/*
+=======================================
+============ Body =======================
+=======================================
+*/
+
+.body-flex {
+  @apply relative flex justify-between items-center m-auto;
+}
+
+.nav-link {
+  @apply text-base font-bold text-lightGray;
+}
+
+.nav-btn {
+  @apply bg-green text-white rounded text-sm font-bold py-2 px-3 hover:bg-hoverGreen disabled:bg-red-500;
+}
