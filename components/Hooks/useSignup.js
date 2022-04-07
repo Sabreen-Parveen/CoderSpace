@@ -1,8 +1,7 @@
 import { useState, useCallback } from "react";
 
-import signUp from "../Auth/signup";
+import signUp from "components/Auth/Signup";
 import useIsMounted from "./useIsMounted";
-import { postRequestWithAuth } from "../../components/utils/requests";
 
 export default function useSignup(options) {
   const isMounted = useIsMounted();
@@ -28,9 +27,6 @@ export default function useSignup(options) {
             data.lastName
           );
           console.log(response);
-          await postRequestWithAuth(`/user/${response.UserSub}`, {
-            name: data.firstName,
-          });
           if (isMounted.current) {
             setLoading(false);
             options.onSuccess();

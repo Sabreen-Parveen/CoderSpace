@@ -48,12 +48,12 @@ export default function Nav() {
 function Logo() {
   return (
     <div className="min-w-max">
-      <Image
+      {/* <Image
         height="30px"
         width="200px"
         src="/images/coat.png"
         alt="CoderSpace logo"
-      />
+      /> */}
     </div>
   );
 }
@@ -80,7 +80,7 @@ function NavLinks({ ctx, route, signoutUser }) {
             </Link>
           </li>
           <li className="lg:ml-auto">
-            <button className=" nav-btn" onClick={signoutUser}>
+            <button className="nav-btn" onClick={signoutUser}>
               Logout
             </button>
           </li>
