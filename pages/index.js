@@ -18,29 +18,34 @@ export default function Home() {
 
         <p className={styles.description}>
           Get started by creating your account{" "}
-          <code className={styles.code}>pages/index.js</code>
+          <code className={styles.code}>Hello World!</code>
         </p>
 
         <div className={styles.grid}>
           <a href="" className={styles.card}>
             <h2>Login &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Login to continue using this app and manage your workspace</p>
           </a>
 
           <a href="" className={styles.card}>
             <h2>Signup &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Deploy &rarr;</h2>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Signup to create your profile and explore what features we have!
+            </p>
+          </a>
+
+          <a href="" className={styles.card}>
+            <h2>Compile and Run &rarr;</h2>
+            <p>
+              Use our compiler to compile and run your code in any language.
+            </p>
+          </a>
+
+          <a href="" className={styles.card}>
+            <h2>Upload Files&rarr;</h2>
+            <p>
+              Upload all your files to keep them at one place, using our cloud
+              storage.
             </p>
           </a>
         </div>

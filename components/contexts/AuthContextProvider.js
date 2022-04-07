@@ -5,7 +5,6 @@ import AuthContext from "./AuthContext";
 
 export default function AuthContextProvider({ children }) {
   const [userDetail, setUserDetail] = useState(null);
-  const [identity, setIdentity] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   function changeUserDetail(details) {
@@ -22,9 +21,8 @@ export default function AuthContextProvider({ children }) {
       changeUserDetail,
       isLoggedIn,
       changeLoginState,
-      identity,
     }),
-    [userDetail, isLoggedIn, identity]
+    [userDetail, isLoggedIn]
   );
 
   useEffect(() => {

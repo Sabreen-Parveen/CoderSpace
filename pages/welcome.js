@@ -8,7 +8,7 @@ export default function Welcome() {
         Your email address has been successfully verified.
       </p>
       <Link href="/login">
-        <a className="sq-nav-btn">Click here to login</a>
+        <a className="  nav-btn">Click here to login</a>
       </Link>
     </div>
   );

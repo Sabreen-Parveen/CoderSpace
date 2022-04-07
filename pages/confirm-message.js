@@ -4,7 +4,7 @@ export default function ConfirmMessage() {
   return (
     <>
       <Head>
-        <title>Confirm Message | SourceQwik</title>
+        <title>Confirm Message | CodeSpace</title>
       </Head>
       <div className="text-center py-6">
         <h1 className="font-bold text-3xl">Welcome!</h1>
