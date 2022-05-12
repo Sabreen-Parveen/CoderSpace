@@ -10,6 +10,7 @@ import ManageFile from "../../lib/Dashboards/file/ManageFile";
 import ProfileSelection from "../../lib/Dashboards/profile/ProfileSelection";
 import PageDoesNotExist from "../../lib/Dashboards/PageNotExist";
 import Analytics from "../../lib/Dashboards/Analytics/AnalyticsSelection";
+import TodoWindow from "../../lib/Dashboards/Todo/TodoWindow";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -43,6 +44,15 @@ export default function DashboardPage() {
           <Analytics tab={tab} />
         </>
       );
+    } else if (type === "todo") {
+      return (
+        <>
+          <Head>
+            <title>Todo - Dashboard | CodeSpace</title>
+          </Head>
+          <TodoWindow />
+        </>
+      );
     } else {
       return <PageDoesNotExist />;
     }
@@ -71,6 +81,13 @@ export default function DashboardPage() {
         >
           <FaCode />
           Analytics
+        </DashboardSidebarButton>
+        <DashboardSidebarButton
+          linkTo={"/dashboard/todo"}
+          highlight={type === "todo"}
+        >
+          <FaCode />
+          Todo
         </DashboardSidebarButton>
       </Sidebar>
       <DashboardSelection>{getSelection(type)}</DashboardSelection>
