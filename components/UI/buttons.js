@@ -2,7 +2,11 @@ import router from "next/router";
 
 export function FormSubmitBtn({ children, type, disabled }) {
   return (
-    <button className="form-button" disabled={disabled} type={type}>
+    <button
+      className="bg-slate-700 text-lg font-medium font-bold text-white w-96 rounded-lg h-12 my-2 hover:bg-slate-900 focus:outline-none"
+      disabled={disabled}
+      type={type}
+    >
       {children}
     </button>
   );

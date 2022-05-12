@@ -18,7 +18,7 @@ export default function useLazyGetRequestWithoutAuth(options = {}) {
       }
       setLoading(true);
       try {
-        const response = await API.get("sourceQwik", route);
+        const response = await API.get("coderSpace", route);
         setLoading(false);
         setData(response);
         if (options.onSuccess) {

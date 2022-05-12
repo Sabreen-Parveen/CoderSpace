@@ -26,6 +26,9 @@ module.exports = {
         hoverGreen: {
           DEFAULT: "#243737",
         },
+        blueGray: {
+          DEFAULT: "#64748B",
+        },
       },
     },
   },

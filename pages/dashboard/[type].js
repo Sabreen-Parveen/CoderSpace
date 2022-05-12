@@ -8,8 +8,8 @@ import DashboardSelection from "../../components/UI/Dashboard/DashboardSelection
 import Dashboard from "../../components/UI/Dashboard/Dashboard";
 import ManageFile from "../../lib/Dashboards/file/ManageFile";
 import ProfileSelection from "../../lib/Dashboards/profile/ProfileSelection";
-import OnlineCompiler from "../../lib/Dashboards/OnlineCompiler";
 import PageDoesNotExist from "../../lib/Dashboards/PageNotExist";
+import Analytics from "../../lib/Dashboards/Analytics/AnalyticsSelection";
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -34,13 +34,13 @@ export default function DashboardPage() {
           <ProfileSelection tab={tab} />
         </>
       );
-    } else if (type === "compiler") {
+    } else if (type === "analytics") {
       return (
         <>
           <Head>
-            <title>Online Compiler - Dashboard | CodeSpace</title>
+            <title>Analytics - Dashboard | CodeSpace</title>
           </Head>
-          <OnlineCompiler tab={tab} />
+          <Analytics tab={tab} />
         </>
       );
     } else {
@@ -66,11 +66,11 @@ export default function DashboardPage() {
           Profile
         </DashboardSidebarButton>
         <DashboardSidebarButton
-          linkTo={"/dashboard/compiler?tab=current"}
-          highlight={type === "compiler"}
+          linkTo={"/dashboard/analytics?tab=leetcode"}
+          highlight={type === "analytics"}
         >
           <FaCode />
-          Online compiler
+          Analytics
         </DashboardSidebarButton>
       </Sidebar>
       <DashboardSelection>{getSelection(type)}</DashboardSelection>

@@ -13,7 +13,7 @@ export default function useGetRequestWithoutAuth(route, options = {}) {
   useEffect(() => {
     async function makeRequest() {
       try {
-        const response = await API.get("sourceQwik", route);
+        const response = await API.get("coderSpace", route);
         if (isMounted.current) {
           setLoading(false);
           setData(response);
