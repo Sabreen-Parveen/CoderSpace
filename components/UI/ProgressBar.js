@@ -6,7 +6,8 @@ const ProgressBar = ({ bgcolor, progress, height }) => {
     width: 500,
     backgroundColor: "whitesmoke",
     borderRadius: 20,
-    margin: 20,
+    marginTop: 10,
+    marginBottom: 10,
   };
 
   const Childdiv = {

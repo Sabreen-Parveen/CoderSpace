@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        128: "32rem",
+      },
       colors: {
         green: {
           DEFAULT: "#2c4444",
