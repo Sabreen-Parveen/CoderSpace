@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import DeleteIcon from "./DeleteIcon";
+import { FaTrashAlt } from "react-icons/fa";
 import EditIcon from "./EditIcon";
 
 const Todo = ({ text, id, completed, todos, setTodos }) => {
@@ -59,8 +59,8 @@ const Todo = ({ text, id, completed, todos, setTodos }) => {
           className="w-6 hover:cursor-pointer transition-all hover:opacity-80"
           onClick={(e) => setEditMode(true)}
         />
-        <DeleteIcon
-          className="w-6 hover:cursor-pointer transition-all hover:opacity-80"
+        <FaTrashAlt
+          className="w-3 hover:cursor-pointer transition-all hover:opacity-80"
           onClick={deleteTodo}
         />
       </div>

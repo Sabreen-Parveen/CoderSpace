@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { FaFileAlt, FaUser, FaCode } from "react-icons/fa";
+import { FaFileAlt, FaUser, FaChartBar, FaList } from "react-icons/fa";
 
 import { DashboardSidebarButton } from "../../components/UI/buttons";
 import Sidebar from "../../components/UI/Dashboard/Sidebar";
@@ -79,14 +79,14 @@ export default function DashboardPage() {
           linkTo={"/dashboard/analytics?tab=leetcode"}
           highlight={type === "analytics"}
         >
-          <FaCode />
+          <FaChartBar />
           Analytics
         </DashboardSidebarButton>
         <DashboardSidebarButton
           linkTo={"/dashboard/todo"}
           highlight={type === "todo"}
         >
-          <FaCode />
+          <FaList />
           Todo
         </DashboardSidebarButton>
       </Sidebar>

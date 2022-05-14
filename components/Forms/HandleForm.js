@@ -13,7 +13,7 @@ export default function HandleForm({ submitHandler }) {
       {({ isSubmitting }) => (
         <Form>
           <div className="mt-20 w-screen flex justify-center">
-            <div className="w-1/2 h-20 flex justify-center items-center shadow-md">
+            <div className="w-1/2 h-20 flex bg-white justify-center items-center shadow-md rounded">
               <label htmlFor="handle" className="mr-10 form-label">
                 Enter Handle
               </label>

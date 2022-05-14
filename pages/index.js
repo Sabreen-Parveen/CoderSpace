@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import MyCarousel from "../components/UI/carousel";
 
 export default function Home() {
   return (
@@ -15,40 +16,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="">CoderSpace!</a>
         </h1>
-
-        <p className={styles.description}>
-          Get started by creating your account{" "}
-          <code className={styles.code}>Hello World!</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="" className={styles.card}>
-            <h2>Login &rarr;</h2>
-            <p>Login to continue using this app and manage your workspace</p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Signup &rarr;</h2>
-            <p>
-              Signup to create your profile and explore what features we have!
-            </p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Compile and Run &rarr;</h2>
-            <p>
-              Use our compiler to compile and run your code in any language.
-            </p>
-          </a>
-
-          <a href="" className={styles.card}>
-            <h2>Upload Files&rarr;</h2>
-            <p>
-              Upload all your files to keep them at one place, using our cloud
-              storage.
-            </p>
-          </a>
-        </div>
+        <MyCarousel />
       </main>
     </div>
   );
