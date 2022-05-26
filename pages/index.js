@@ -17,6 +17,7 @@ export default function Home() {
           Welcome to <a href="">CoderSpace!</a>
         </h1>
         <MyCarousel />
+
       </main>
     </div>
   );

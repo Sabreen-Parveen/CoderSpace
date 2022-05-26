@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { FaFileAlt, FaUser, FaChartBar, FaList } from "react-icons/fa";
 
+
 import { DashboardSidebarButton } from "../../components/UI/buttons";
 import Sidebar from "../../components/UI/Dashboard/Sidebar";
 import DashboardSelection from "../../components/UI/Dashboard/DashboardSelection";
@@ -11,6 +12,7 @@ import ProfileSelection from "../../lib/Dashboards/profile/ProfileSelection";
 import PageDoesNotExist from "../../lib/Dashboards/PageNotExist";
 import Analytics from "../../lib/Dashboards/Analytics/AnalyticsSelection";
 import TodoWindow from "../../lib/Dashboards/Todo/TodoWindow";
+
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -35,6 +37,7 @@ export default function DashboardPage() {
           <ProfileSelection tab={tab} />
         </>
       );
+
     } else if (type === "analytics") {
       return (
         <>
@@ -88,6 +91,7 @@ export default function DashboardPage() {
         >
           <FaList />
           Todo
+
         </DashboardSidebarButton>
       </Sidebar>
       <DashboardSelection>{getSelection(type)}</DashboardSelection>
