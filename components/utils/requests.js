@@ -17,6 +17,7 @@ export async function postRequestWithAuth(path, data) {
   // data.headers = {
   //   Authorization: jwtToken,
   // };
+  console.log(data);
 
   return API.post("CoderSpaceApi", path, data);
 }

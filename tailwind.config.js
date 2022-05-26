@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        128: "32rem",
+      },
       colors: {
         green: {
           DEFAULT: "#2c4444",
@@ -25,6 +28,9 @@ module.exports = {
         },
         hoverGreen: {
           DEFAULT: "#243737",
+        },
+        blueGray: {
+          DEFAULT: "#64748B",
         },
       },
     },

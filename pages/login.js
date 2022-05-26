@@ -27,6 +27,7 @@ export default function Login() {
       ctx.changeUserDetail(user.attributes);
       ctx.changeLoginState(true);
       setLoading(false);
+      router.push("/dashboard");
     } catch (err) {
       let error = err;
       let errorMessage = "Something happened. Please try again.";

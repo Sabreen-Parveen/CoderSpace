@@ -1,6 +1,6 @@
 import Spinner from "../Spinner";
 import { ShowError } from "../errors";
-import useFileGetRequestWithoutAuth from "../../../components/Hooks/useFileGetRequestWithoutAuth";
+import useFileGetRequestWithoutAuth from "../../Hooks/useFileGetRequestWithoutAuth";
 
 export default function ShowFiles({ fileIds, additionalData }) {
   return (
@@ -43,7 +43,7 @@ function ShowFileData({ data, showAdditionalData = false }) {
         </p>
       ) : null}
       <a
-        className="  nav-btn block w-max mt-2"
+        className="nav-btn block w-max mt-2"
         href={data.fileAccessUrl}
         target="_blank"
         rel="noreferrer"

@@ -16,7 +16,7 @@ export default function useFileGetRequestWithoutAuth(route, options = {}) {
   useEffect(() => {
     async function makeRequest() {
       try {
-        const response = await API.get("Diogenes", route);
+        const response = await API.get("CoderSpaceApi", route);
         if (isMounted.current) {
           setLoading(false);
           setData(response);

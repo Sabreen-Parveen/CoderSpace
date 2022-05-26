@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { FaFileAlt, FaUser, FaCode } from "react-icons/fa";
+import { FaFileAlt, FaUser, FaChartBar, FaList } from "react-icons/fa";
+
 
 import { DashboardSidebarButton } from "../../components/UI/buttons";
 import Sidebar from "../../components/UI/Dashboard/Sidebar";
@@ -8,8 +9,10 @@ import DashboardSelection from "../../components/UI/Dashboard/DashboardSelection
 import Dashboard from "../../components/UI/Dashboard/Dashboard";
 import ManageFile from "../../lib/Dashboards/file/ManageFile";
 import ProfileSelection from "../../lib/Dashboards/profile/ProfileSelection";
-import OnlineCompiler from "../../lib/Dashboards/OnlineCompiler";
 import PageDoesNotExist from "../../lib/Dashboards/PageNotExist";
+import Analytics from "../../lib/Dashboards/Analytics/AnalyticsSelection";
+import TodoWindow from "../../lib/Dashboards/Todo/TodoWindow";
+
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -34,13 +37,23 @@ export default function DashboardPage() {
           <ProfileSelection tab={tab} />
         </>
       );
-    } else if (type === "compiler") {
+
+    } else if (type === "analytics") {
       return (
         <>
           <Head>
-            <title>Online Compiler - Dashboard | CodeSpace</title>
+            <title>Analytics - Dashboard | CodeSpace</title>
           </Head>
-          <OnlineCompiler tab={tab} />
+          <Analytics tab={tab} />
+        </>
+      );
+    } else if (type === "todo") {
+      return (
+        <>
+          <Head>
+            <title>Todo - Dashboard | CodeSpace</title>
+          </Head>
+          <TodoWindow />
         </>
       );
     } else {
@@ -66,11 +79,19 @@ export default function DashboardPage() {
           Profile
         </DashboardSidebarButton>
         <DashboardSidebarButton
-          linkTo={"/dashboard/compiler?tab=current"}
-          highlight={type === "compiler"}
+          linkTo={"/dashboard/analytics?tab=leetcode"}
+          highlight={type === "analytics"}
         >
-          <FaCode />
-          Online compiler
+          <FaChartBar />
+          Analytics
+        </DashboardSidebarButton>
+        <DashboardSidebarButton
+          linkTo={"/dashboard/todo"}
+          highlight={type === "todo"}
+        >
+          <FaList />
+          Todo
+
         </DashboardSidebarButton>
       </Sidebar>
       <DashboardSelection>{getSelection(type)}</DashboardSelection>

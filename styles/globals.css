@@ -12,6 +12,7 @@ body {
   font-family: "Raleway", sans-serif;
   position: relative;
   overflow-x: hidden;
+  background-color: rgb(246, 242, 242);
 }
 
 /*
@@ -230,7 +231,7 @@ body {
 }
 
 .form-button {
-  @apply bg-gray-100 text-lg font-medium font-bold text-white w-96 rounded-lg h-12 my-2 hover:bg-hoverGreen focus:outline-none;
+  @apply bg-slate-700 text-lg font-medium font-bold text-white w-96 rounded-lg h-12 my-2 hover:bg-hoverGreen focus:outline-none;
 }
 
 .rfq-form-label {
