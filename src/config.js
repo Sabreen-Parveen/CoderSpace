@@ -8,7 +8,7 @@ const config = {
     endpoints: [
       {
         name: "CoderSpaceApi",
-        endpoint: "http://localhost:8000/api",
+        endpoint: process.env.NEXT_PUBLIC_URL,
       },
     ],
   },
