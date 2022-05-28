@@ -6,9 +6,10 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "dev": "NODE_ENV=development next dev",
+    "prod": "NODE_ENV=production npm run build && next start",
+    "start": "npm run prod",
     "lint": "next lint"
   },
   "dependencies": {
