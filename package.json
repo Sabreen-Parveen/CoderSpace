@@ -25,13 +25,13 @@
     "react-loader-spinner": "^6.0.0-0",
     "react-phone-input-2": "^2.15.0",
     "uniqid": "^5.4.0",
-    "yup": "^0.32.11"
+    "yup": "^0.32.11",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
     "eslint": "8.10.0",
-    "eslint-config-next": "12.1.0",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23"
+    "eslint-config-next": "12.1.0"
   }
 }
